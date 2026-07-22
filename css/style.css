@@ -122,6 +122,10 @@ section { scroll-margin-top: 90px; }
   object-fit: contain;
   filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.45));
 }
+.brand-logo-rect {
+  width: auto;
+  height: 44px;
+}
 .brand-name {
   font-family: var(--font-head);
   font-size: 1.25rem;
@@ -599,6 +603,7 @@ section { scroll-margin-top: 90px; }
 
 @media (max-width: 640px) {
   .hero { padding-top: 110px; }
+  .brand-logo-rect { height: 34px; }
   .console-body p { font-size: 0.72rem; }
   .footer-inner { flex-direction: column; text-align: center; }
 }

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlobalCore — Software, Hardware, Satélites & IoT</title>
+  <meta name="description" content="GlobalCore: desenvolvimento de software e hardware, inovação, conectividade via satélite e soluções de IoT. Conectando o futuro, da Terra ao espaço." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand">
+        <img src="assets/logo.png" alt="Logo GlobalCore" class="brand-logo" />
+        <span class="brand-name">Global<b>Core</b></span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#solucoes">Soluções</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#inovacao">Inovação</a>
+        <a href="#contato" class="nav-cta">Contato</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="badge"><span class="pulse-dot"></span> Tecnologia · Inovação · Conectividade</span>
+          <h1>Conectando o <span class="grad-text">futuro</span>,<br />da Terra ao espaço.</h1>
+          <p class="lead">
+            A GlobalCore projeta e desenvolve software, hardware e sistemas de
+            conectividade via satélite e IoT — transformando ideias em
+            tecnologia de ponta, pronta para o mundo real.
+          </p>
+          <div class="hero-actions">
+            <a href="#solucoes" class="btn btn-primary">Explorar soluções</a>
+            <a href="#contato" class="btn btn-ghost">Fale conosco</a>
+          </div>
+          <ul class="hero-tags">
+            <li>Software</li>
+            <li>Hardware</li>
+            <li>Satélites</li>
+            <li>IoT</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="console glass">
+            <div class="console-bar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="console-title">globalcore://mission-control</span>
+            </div>
+            <div class="console-body">
+              <p><span class="prompt">&gt;</span> inicializando núcleo ......... <span class="ok">OK</span></p>
+              <p><span class="prompt">&gt;</span> uplink satelital ............ <span class="ok">CONECTADO</span></p>
+              <p><span class="prompt">&gt;</span> nós IoT ativos .............. <span class="num">128</span></p>
+              <p><span class="prompt">&gt;</span> telemetria .................. <span class="ok">SYNC</span></p>
+              <p class="typed-line"><span class="prompt">&gt;</span> <span id="typed"></span><span class="cursor">▌</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS — AJUSTE: substitua pelos números reais da GlobalCore -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal">
+          <div class="stat-value"><span class="stat-num" data-target="120">0</span>+</div>
+          <p>Projetos entregues</p>
+        </div>
+        <div class="stat reveal">
+          <div class="stat-value"><span class="stat-num" data-target="45">0</span>+</div>
+          <p>Clientes atendidos</p>
+        </div>
+        <div class="stat reveal">
+          <div class="stat-value"><span class="stat-num" data-target="30">0</span>+</div>
+          <p>Países com cobertura</p>
+        </div>
+        <div class="stat reveal">
+          <div class="stat-value"><span class="stat-num" data-target="24">0</span>/7</div>
+          <p>Operação &amp; suporte</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUÇÕES -->
+    <section class="section" id="solucoes">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">// Soluções</span>
+          <h2>O que a GlobalCore <span class="grad-text">constrói</span></h2>
+          <p>Do chip à nuvem, do software ao satélite: engenharia completa para produtos digitais e conectados.</p>
+        </div>
+        <div class="cards">
+          <article class="card glass reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Desenvolvimento de Software</h3>
+            <p>Aplicações web, mobile e APIs robustas, com arquitetura escalável e foco total em experiência do usuário.</p>
+            <ul class="card-tags"><li>Web</li><li>Mobile</li><li>Cloud</li></ul>
+          </article>
+
+          <article class="card glass reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+            </div>
+            <h3>Hardware &amp; Embarcados</h3>
+            <p>Projeto de placas, firmware e sistemas embarcados — do esquemático ao protótipo funcional e à produção.</p>
+            <ul class="card-tags"><li>PCB</li><li>Firmware</li><li>Prototipagem</li></ul>
+          </article>
+
+          <article class="card glass reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M4.6 9.2c4.2-6.4 11.4-7.3 15.4-3.4"/><path d="M19.4 14.8c-4.2 6.4-11.4 7.3-15.4 3.4"/><circle cx="19.4" cy="5.6" r="1.3" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3>Conectividade via Satélite</h3>
+            <p>Comunicação global e resiliente com links satelitais para áreas remotas e operações de missão crítica.</p>
+            <ul class="card-tags"><li>Uplink</li><li>NTN</li><li>Telemetria</li></ul>
+          </article>
+
+          <article class="card glass reveal">
+            <div class="card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M8.1 8.1a5.5 5.5 0 0 0 0 7.8M15.9 8.1a5.5 5.5 0 0 1 0 7.8M5 5a10 10 0 0 0 0 14M19 5a10 10 0 0 1 0 14"/></svg>
+            </div>
+            <h3>IoT &amp; Dispositivos Conectados</h3>
+            <p>Ecossistemas de sensores e dispositivos inteligentes, do edge ao dashboard em tempo real.</p>
+            <ul class="card-tags"><li>Sensores</li><li>MQTT</li><li>Dashboards</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="container split">
+        <div class="split-visual reveal">
+          <div class="orbit" aria-hidden="true">
+            <div class="orbit-ring ring-1"></div>
+            <div class="orbit-ring ring-2"></div>
+            <div class="orbit-ring ring-3"><span class="satellite"></span></div>
+            <img src="assets/logo.png" alt="" class="orbit-logo" />
+          </div>
+        </div>
+        <div class="split-copy reveal">
+          <span class="kicker">// Sobre nós</span>
+          <h2>Uma empresa de tecnologia <span class="grad-text">sem fronteiras</span></h2>
+          <p>
+            A GlobalCore nasceu com uma missão clara: unir engenharia de software e
+            hardware para criar soluções que conectam pessoas, máquinas e o espaço.
+            Atuamos em todo o ciclo de inovação — da pesquisa ao produto final.
+          </p>
+          <p>
+            Com expertise em conectividade satelital e Internet das Coisas, levamos
+            tecnologia de ponta aonde a infraestrutura tradicional não alcança.
+          </p>
+          <ul class="check-list">
+            <li>Equipe multidisciplinar de engenharia e design</li>
+            <li>Do protótipo à produção em escala</li>
+            <li>Visão global, execução ágil</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INOVAÇÃO -->
+    <section class="section" id="inovacao">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">// Inovação</span>
+          <h2>Pesquisa que vira <span class="grad-text">produto</span></h2>
+          <p>Investimos continuamente em frentes emergentes para manter nossos clientes sempre à frente.</p>
+        </div>
+        <ul class="chips reveal">
+          <li>Inteligência Artificial</li>
+          <li>Edge Computing</li>
+          <li>Redes NTN &amp; 5G</li>
+          <li>Sistemas Embarcados</li>
+          <li>Visão Computacional</li>
+          <li>Blockchain</li>
+          <li>Digital Twins</li>
+          <li>Cibersegurança</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="cta glass reveal">
+          <h2>Pronto para construir o <span class="grad-text">próximo salto</span>?</h2>
+          <p>Conte com a GlobalCore para tirar seu projeto do papel — do conceito ao lançamento.</p>
+          <!-- AJUSTE: troque pelo e-mail real da empresa -->
+          <a class="btn btn-primary" href="mailto:contato@globalcore.dev">contato@globalcore.dev</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="brand">
+        <img src="assets/logo.png" alt="Logo GlobalCore" class="brand-logo" />
+        <span class="brand-name">Global<b>Core</b></span>
+      </a>
+      <nav class="footer-links">
+        <a href="#solucoes">Soluções</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#inovacao">Inovação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <p class="copy">© <span id="year"></span> GlobalCore. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
